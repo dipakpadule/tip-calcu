@@ -1,0 +1,195 @@
+$fontfamily: 'Space Mono';
+$bold:700;
+
+$Strong-cyan: hsl(172, 67%, 45%);
+$Very-dark-cyan: hsl(183, 100%, 15%);
+$Dark-grayish-cyan: hsl(186, 14%, 43%);
+$Grayish-cyan: hsl(184, 14%, 56%);
+$Light-grayish-cyan: hsl(185, 41%, 84%);
+$Very-light-grayish-cyan: hsl(189, 41%, 97%);
+$White: hsl(0, 0%, 100%);
+$Font-size: 1.5rem;
+
+.tipcalcu{
+  .logo{
+    display: flex;
+    justify-content: center;
+    padding: 3.12rem 9rem 2.56rem 9rem;
+  }
+  .tipcalcu-main{
+    width: 100vw;
+    height: 47.31rem;
+    background: $White;
+    border-radius: 1.5rem 1.5rem 0 0;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .main-form{
+      padding: 0.5rem;
+      height: 29.37rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .bill-input{
+        display: flex;
+        flex-direction: column;
+        input{
+          height: 2.875rem;
+          width: 19.375rem;
+          border: none;
+          border-radius: 0.5rem;
+          background: $Very-light-grayish-cyan;
+        }
+      }
+      .tip-input{
+        p{
+          margin-top: 2rem;
+        }
+        .tip{
+          font-size: 1.2rem;
+          margin-top: 0.7rem;
+          display: grid;
+          grid-template-columns: 9.12rem 9.12rem;
+          row-gap: 18px;
+          column-gap: 18px;
+          margin-bottom: 2rem;
+          .tips{
+            height: 3rem;
+            color: $White;
+            border-radius: 0.5em;
+            background: $Very-dark-cyan;
+            display:grid;
+            place-items: center;
+          }
+          .active-tip{
+            color: $Very-dark-cyan;
+            background: $Strong-cyan;
+          }
+          #custom-tip{
+            input{
+              height: 3rem;
+              width: 9.12rem;
+              border: none;
+              border-radius: 0.5em;
+              background: $Very-light-grayish-cyan;
+            }
+            ::placeholder{
+              text-align: center;
+              color: $Very-dark-cyan;
+              font-weight: $bold;
+            }
+          }
+        }
+      }
+      .people-input{
+        display: flex;
+        flex-direction: column;
+        input{
+          margin-top: 0.5rem;
+          height: 2.875rem;
+          width: 19.375rem;
+          border: none;
+          border-radius: 0.5rem;
+          background: $Very-light-grayish-cyan;
+        }
+      }
+    }
+    .main-display{
+      width: 20.44rem;
+      height: 16.06rem;
+      background: $Very-dark-cyan;
+      border-radius: 1rem;
+      padding: 2.75rem 1.5rem 1.5rem 1.5rem; 
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .md1{
+        display: flex;
+        justify-content: space-between;
+        strong{
+          color: $Strong-cyan;
+        }
+        .d1{
+          strong{
+            color: $White;
+          }
+          p{
+            color: $Grayish-cyan;
+          }
+        }
+      }
+      button{
+        width: 100%;
+        height: 3rem;
+        border: none;
+        border-radius: 5px;
+        background: $Strong-cyan;
+        color: $Very-dark-cyan;
+        font-size: 1.5rem;
+        font-weight: $bold;
+      }
+    }
+  }
+}
+
+@media (min-width:90rem) {
+  .tipcalcu{
+
+    .tipcalcu-main{
+      width: 57.5em;
+      height: 30em;
+      flex-direction: row;
+      padding: 2em;
+      border-radius: 1.5rem;
+
+      .main-form{
+        width: 25.81em;
+        height: 26em;
+        margin-right: 2em;
+        .bill-input{
+          display: flex;
+          flex-direction: column;
+          input{
+            height: 2.875rem;
+            width: 25.81em;
+          }
+        }
+        .tip-input{
+          p{
+            margin-top: 2rem;
+          }
+          .tip{
+            display: grid;
+            grid-template-columns: 7.31rem 7.31rem 7.31rem;
+            row-gap: 14px;
+            column-gap: 14px;
+            margin-bottom: 2rem;
+
+            .tips{
+              height: 3rem;
+            }
+            #custom-tip{
+              input{
+                height: 3rem;
+                width: 9.12rem;
+              }
+            }
+          }
+        }
+        .people-input{
+          input{
+            height: 2.875rem;
+            width: 25.81em;
+          }
+        }
+      }
+
+      .main-display{
+        width: 25.81em;
+        height: 26em;
+      }
+    }
+  }
+}
