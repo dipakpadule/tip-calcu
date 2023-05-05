@@ -63,6 +63,10 @@ $Font-size: 1.5rem;
             display:grid;
             place-items: center;
           }
+          .tips:hover{
+            cursor: pointer;
+            background: $Strong-cyan;
+          }
           .active-tip{
             color: $Very-dark-cyan;
             background: $Strong-cyan;
@@ -130,6 +134,10 @@ $Font-size: 1.5rem;
         font-size: 1.5rem;
         font-weight: $bold;
       }
+      button:hover{
+        cursor: pointer;
+        background: $Light-grayish-cyan;
+      }
     }
   }
 }
@@ -139,21 +147,22 @@ $Font-size: 1.5rem;
 
     .tipcalcu-main{
       width: 57.5em;
-      height: 30em;
+      height: 30rem;
       flex-direction: row;
       padding: 2em;
       border-radius: 1.5rem;
 
       .main-form{
         width: 25.81em;
-        height: 26em;
+        height: 26rem;
         margin-right: 2em;
+        padding: 2em;
         .bill-input{
           display: flex;
           flex-direction: column;
           input{
             height: 2.875rem;
-            width: 25.81em;
+            width: 25.81rem;
           }
         }
         .tip-input{
@@ -162,7 +171,7 @@ $Font-size: 1.5rem;
           }
           .tip{
             display: grid;
-            grid-template-columns: 7.31rem 7.31rem 7.31rem;
+            grid-template-columns: 8.02rem 8.02rem 8.02rem;
             row-gap: 14px;
             column-gap: 14px;
             margin-bottom: 2rem;
@@ -171,9 +180,10 @@ $Font-size: 1.5rem;
               height: 3rem;
             }
             #custom-tip{
+
               input{
                 height: 3rem;
-                width: 9.12rem;
+                width: 8.02rem;
               }
             }
           }
@@ -181,7 +191,7 @@ $Font-size: 1.5rem;
         .people-input{
           input{
             height: 2.875rem;
-            width: 25.81em;
+            width: 25.81rem;
           }
         }
       }
@@ -189,6 +199,19 @@ $Font-size: 1.5rem;
       .main-display{
         width: 25.81em;
         height: 26em;
+        padding: 2.5em;
+        justify-content: flex-end;
+
+        button{
+          margin-top: 8rem;
+        }
+
+        .md1{
+          .tipb{
+            font-size: 2.2rem;
+          }
+        }
+        .d2{ margin-top: 3rem;}
       }
     }
   }
